@@ -1,0 +1,24 @@
+5
+Who was the murderer?
+How many items spawned total? 
+How many rooms were there in the mansion?
+Who moved first each turn?
+How many murder weapons were used?
+9
+TIME,PLAYER,DEATH
+ROOM,PLAYER,DEATH
+ROOM,ITEM,DROP
+ROOM,ITEM,GRAB
+TIME,ITEM,DROP
+TIME,ITEM,GRAB
+ROOM,PLAYER,TIME
+PLAYER,TIME,GRAB
+PLAYER,TIME,DROP
+7
+What line number in `mansion.Mansion:next_turn()` decides how many moves a player gets?
+What line number in `mansion.Mansion` decides the cool_down when a murderer kills someone?
+What line number in `mansion.Mansion:next_turn()` method increments the time at the end of each turn?
+What line number in `mansion.Mansion` changes the current player's location attribute after they move?
+What line number in `mansion.Mansion` returns False if the murderer wins?
+What line number in `mansion.Mansion:__init__()` creates all the items?
+What line number in `mansion.Mansion:__init__()` sets the random seed with the calculated `login_id` hash?
