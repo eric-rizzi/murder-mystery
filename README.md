@@ -1,5 +1,6 @@
 # Murder Mystery Debugging Exercise
 
+```
                                                                                    .--.
                                                                                .-(    ).
                                                                                (___.__)__)
@@ -14,6 +15,7 @@
  |_|  |_|\__,_|_|  \__,_|\___|_|    |_|  |_|\__, |___/\__\___|_|   \__, |    ||'''| |''||''|''|
                                            __/ |                  __/ |     ``"""`"`""))""`""`
 A debugger-based Mystery Solving game     |___/                  |___/
+```
 
 This folder contains a Python port of the "Murder Mystery" debugging exercise
 developed at Rutgers (the original activity was in Java). It is intended to be
