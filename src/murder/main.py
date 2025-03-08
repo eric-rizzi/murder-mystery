@@ -76,7 +76,9 @@ if __name__ == "__main__":
     Main method to run the Murder Mystery game
     """
     clear_screen()
-    print("Please enter your loginID:")
+    request = "Please enter your loginID:"
+    print(request)
+
     login_id = input().strip()
 
     # loginID check
