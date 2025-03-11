@@ -249,3 +249,7 @@ class Person:
         item = self.holds
         self.holds = None
         return item
+
+
+if __name__ == "__main__":
+    print("🔍 Hint: To start the investigation, you need to run `main.py`, not this file.")

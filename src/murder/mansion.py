@@ -490,3 +490,7 @@ class Mansion:
         :returns: True if the murderer is the last alive
         """
         return self.alive_players() == 1 and self.players[self.murderer].is_alive()
+
+
+if __name__ == "__main__":
+    print("🔍 Hint: To start the investigation, you need to run `main.py`, not this file.")

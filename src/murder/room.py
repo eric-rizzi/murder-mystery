@@ -119,3 +119,7 @@ class Room:
         Set door costs
         """
         self.door_costs = door_costs
+
+
+if __name__ == "__main__":
+    print("🔍 Hint: To start the investigation, you need to run `main.py`, not this file.")
