@@ -34,13 +34,13 @@ class Mansion:
     debugging techniques to solve the mystery, and close the case.
     """
 
-    def __init__(self, login_id: str, *, show_intro=False) -> None:
+    def __init__(self, case_number: str, *, show_intro=False) -> None:
         """
-        Mansion constructor which sets random seed based on login_id
+        Mansion constructor which sets random seed based on case_number
 
         Time starts at 0, representing minutes passed since "start" hour attribute
 
-        :param login_id: The login_id to use for random seeding
+        :param case_number: The value to use for random seeding
         :param show_intro: If True, show the intro screen (takes time)
         """
         # Time starts at 0 minutes past starting time, moves in +5 (min) increments
@@ -50,8 +50,8 @@ class Mansion:
         self.end = END_TIME
         # The murderer has to wait 5 turns to attack initially
         self.cool_down = MURDER_COOL_DOWN
-        # Set custom login_id seed for game
-        random.seed(hash(login_id))
+        # Set custom case_number seed for game
+        random.seed(hash(case_number))
 
         # Generate rooms, players, items
         self.players = self.generate_players()  # Generate players, choose murderer

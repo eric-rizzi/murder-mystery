@@ -245,14 +245,14 @@ def generate_questions(mansion: Mansion, q_seeds: list[SeedQuestion]) -> list[st
     return parsed
 
 
-def write_answers(login_id: str, ans: list[str]) -> None:
+def write_answers(case_number: str, ans: list[str]) -> None:
     """
     Write answers to output file
 
-    :param login_id: User's login ID
+    :param case_number: User's "case number" used to seed random
     :param ans: List of answers
     """
     with open("Answers.out", "w") as file:
-        file.write(login_id + "\n")
+        file.write(case_number + "\n")
         for answer in ans:
             file.write(answer + "\n")

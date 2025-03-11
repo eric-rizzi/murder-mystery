@@ -8,31 +8,30 @@ class Coordinates(typing.NamedTuple):
     y: int
 
 
-def valid_login_id(login_id: str) -> bool:
+def valid_case_number(case_number: str) -> bool:
     """
-    This method can be used to limit login_id types.
-    It accepts all login IDs by default.
+    This method can be used to limit "case number" types. It accepts all case
+    numbers by default.
 
     :returns: True if valid, False otherwise
     """
     return True
 
 
-def hash(login_id: str) -> int:
+def hash(case_number: str) -> int:
     """
-    Takes a login_id and turns it into a value which can be used
-    to seed the random module
+    Takes a "case number" and turns it into a value which can be used to seed
+    the random module.
 
-    :param login_id: a valid login_id
-    :returns: an integer value seed
+    :param case_number: A token used to seed the game
+    :returns: An integer value seed
     """
-    # If no login_id was read, or login_id is incorrect length
-    if not valid_login_id(login_id):
+    if not valid_case_number(case_number):
         return 1
 
     seed = ""
-    for i in range(len(login_id)):  # Concatenates the ascii value of each login_id char to a string
-        ascii_val = ord(login_id[i])
+    for c in case_number:  # Concatenates the ascii value of each char to a string
+        ascii_val = ord(c)
         seed += str(ascii_val)
 
     if len(seed) > 18:

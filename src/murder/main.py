@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from murder.mansion import Mansion
 from murder.questions import ask_questions, write_answers
-from murder.utils import clear_screen, valid_login_id, wait
+from murder.utils import clear_screen, valid_case_number, wait
 
 
 class MurderMystery:
@@ -26,9 +26,8 @@ class MurderMystery:
     http://nifty.stanford.edu/2025/sullivan-chen-centeno-murder-mystery/
     """
 
-    def __init__(self, login_id: str, show_intro: bool) -> None:
-        self.login_id = login_id
-        self.mansion = Mansion(login_id, show_intro=show_intro)
+    def __init__(self, case_number: str, show_intro: bool) -> None:
+        self.mansion = Mansion(case_number, show_intro=show_intro)
 
     def end_game_stats(self) -> None:
         """
@@ -76,18 +75,18 @@ if __name__ == "__main__":
     Main method to run the Murder Mystery game
     """
     clear_screen()
-    request = "Please enter your loginID:"
+    request = 'Please enter your "case number":'
     print(request)
 
-    login_id = input().strip()
+    case_number = input().strip()
 
-    # loginID check
-    if valid_login_id(login_id):
+    # `case_number` check
+    if valid_case_number(case_number):
         continue_game = True
         print("Print Intro? (y/N)")
         intro = input().strip().lower().startswith("y")
 
-        game = MurderMystery(login_id, intro)
+        game = MurderMystery(case_number, intro)
         game.play_game()
 
-        write_answers(login_id, ask_questions(game.mansion))
+        write_answers(case_number, ask_questions(game.mansion))
