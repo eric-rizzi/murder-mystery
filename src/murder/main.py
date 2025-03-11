@@ -84,7 +84,7 @@ if __name__ == "__main__":
     # loginID check
     if valid_login_id(login_id):
         continue_game = True
-        print("Print Intro? (Y/N)")
+        print("Print Intro? (y/N)")
         intro = input().strip().lower().startswith("y")
 
         game = MurderMystery(login_id, intro)
