@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Murder Mystery",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/murder/main.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src"
+      },
+      "python": "${command:python.interpreterPath}"
+    }
+  ]
+}
