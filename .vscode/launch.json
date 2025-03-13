@@ -10,8 +10,7 @@
       "justMyCode": true,
       "env": {
         "PYTHONPATH": "${workspaceFolder}/src"
-      },
-      "python": "${command:python.interpreterPath}"
+      }
     }
   ]
 }
