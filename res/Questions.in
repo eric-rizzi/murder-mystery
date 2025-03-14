@@ -21,4 +21,4 @@ What line number in `mansion.Mansion:next_turn()` method increments the time at 
 What line number in `mansion.Mansion` changes the current player's location attribute after they move?
 What line number in `mansion.Mansion` returns False if the murderer wins?
 What line number in `mansion.Mansion:__init__()` creates all the items?
-What line number in `mansion.Mansion:__init__()` sets the random seed with the calculated `case_number` hash?
+What line number in `mansion.Mansion:__init__()` sets the random seed with the hashed `case_number`?

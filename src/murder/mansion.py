@@ -251,10 +251,8 @@ class Mansion:
                     destination_room = player.choose_door(weights, costs, Coordinates(x, y), dim)
                     tried += 1
 
-                # Move player
-                player.set_location(
-                    destination_room[0], destination_room[1]
-                )  # Move player by changing location attribute
+                # Move player by changing location attribute
+                player.set_location(destination_room[0], destination_room[1])
                 self.room_map[destination_room[0]][destination_room[1]].add_player(player)  # Add player to new room
 
             # LOGIC FOR PLAYERS PICKING UP/DROPPING ITEMS
