@@ -33,6 +33,11 @@ Colin Sullivan, Steven Chen, and Ana Paula Centeno.
 4. Create a copy of this [GoogleDoc](https://docs.google.com/document/d/1raTq4IhXgCF_bPlXW3MFXrc_IMzhc5wMO3H0Bh9bFhw).
 5. Start solving!
 
+## Instructor Setup
+
+Contact me if you'd like access to the "grading" file that pops out the right
+answers for a given seed.
+
 ## Developer Setup
 
 There are three basic steps you need in order to get this project up and
