@@ -18,11 +18,9 @@
         "--profile",
         "black"
     ],
-    "python.testing.unittestArgs": [
+    "python.testing.pytestArgs": [
         "-v",
         "-s",
         "./tests",
-        "-p",
-        "test*.py"
     ]
 }
