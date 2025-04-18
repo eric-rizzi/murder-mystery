@@ -30,7 +30,7 @@ Colin Sullivan, Steven Chen, and Ana Paula Centeno.
 1. Clone this repository to your local computer.
 2. Open `vscode` and select `File` -> `Open Workspace from File`.
 3. Select the `murder-mystery.code-workspace` file within this project folder.
-4. Create a copy of this [GoogleDoc](https://docs.google.com/document/d/1raTq4IhXgCF_bPlXW3MFXrc_IMzhc5wMO3H0Bh9bFhw).
+4. Create a copy of this [GoogleDoc](https://docs.google.com/document/d/1sdd0-y73EI7VdYLAwW9pbDehiGE70M0T7hvVsgzJvRA).
 5. Start solving!
 
 ## Instructor Setup
