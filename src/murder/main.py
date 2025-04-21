@@ -88,5 +88,3 @@ if __name__ == "__main__":
 
         game = MurderMystery(case_number, intro)
         game.play_game()
-
-        write_answers(case_number, ask_questions(game.mansion))
