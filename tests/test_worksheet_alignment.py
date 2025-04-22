@@ -1,8 +1,6 @@
 import typing
 from pathlib import Path
 
-import pytest
-
 # Define the project root directory relative to this test file
 # Assuming this test file is in the 'tests' directory
 PROJECT_ROOT = Path(__file__).parent.parent
